@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatures</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="palimpseste_sources/Curseur.png" />
+    <script src="game.js" defer></script>
+</head>
+
+<body>
+    
+    <div class="column-fixed">
+        <h2 class="h2-wrapper"></h2>
+        <p>Toutes les images de ce site sont issues de <a class=lien href="https://www.publicdomainreview.org" target="_blank">publicdomainreview.org</a></p>
+
+    <!-- Bouton Mode Dark/light -->
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeCheckbox">
+        <label for="darkModeCheckbox" class="toggle-label">
+            <span class="toggle-icon"></span>
+        </label>
+    </div>
+    </div>
+    
+
+    <div class="column-scroll">
+        <div class="ligne" id="top">
+            <div class="column">
+                <h2>Invoque ta créature</table></h2>
+
+                <input type="checkbox" id="creature1" />
+                    <label for="creature1">Bloumphagot</label>
+                    <div class="result">Vous avez invoqué ...<br><br>
+                        <img src="palimpseste_sources/Invocation_créature1.gif" class="gifcreature"></img>
+                    </div>
+
+                <input type="checkbox" id="creature2" />
+                    <label for="creature2">Krakalburp</label>
+                    <div class="result">Vous avez invoqué ...<br><br>
+                        <img src="palimpseste_sources/Invocation_créature2.gif" class="gifcreature"></img>
+                    </div>
+
+                <input type="checkbox" id="creature3" />
+                    <label for="creature3">Clapotichon</label>
+                    <div class="result">Vous avez invoqué ...<br><br>
+                        <img src="palimpseste_sources/Invocation_créature3.gif" class="gifcreature"></img>
+                    </div>
+                
+                    <input type="checkbox" id="creature4" />
+                    <label for="creature4">Pétilobuffe</label>
+                    <div class="result">Vous avez invoqué ...<br><br>
+                        <img src="palimpseste_sources/Invocation_créature4.gif" class="gifcreature"></img>
+                    </div>
+            </div>
+
+            <div class="column">
+                    <!-- Jeu 2 -->
+                    <h2>Trouve la créature : <span id="creature-name"></span></h2>
+                    <div id="options">
+                        <button class="creature-btn" class="sauterelle" data-creature="sauterelle"><img src="palimpseste_sources/sauterelle.jpeg" alt="une sauterelle"/></button>
+                        <button class="creature-btn" class="araignée" data-creature="araignée"><img src="palimpseste_sources/IMG1.png" alt="une araignée"/></button>
+                        <button class="creature-btn" data-creature="creature3"><img src="palimpseste_sources/IMG1.png" alt="A Bug’s Life: David and Marian Fairchild’s Book of Monsters (1914)"/></button>
+                        <button class="creature-btn" data-creature="creature4"><img src="palimpseste_sources/IMG1.png" alt="A Bug’s Life: David and Marian Fairchild’s Book of Monsters (1914)"/></button>
+                        <p>Score : <span id="score">0</span></p>
+                    </div>
+                        
+            </div>
+
+        </div>
+
+        <div class="ligne">
+            <div class="column">
+                <h2>Fais voler des mouches :</h2>
+                <div class="zone_mouche">
+                    <div class="mouche"></div>
+                    <script src="mouche.js"></script>
+                </div>
+            </div>
+        </div>
+
+        <div class="ligne">
+            <div class="column">
+                <h2>La reproduction <br> et le cycle de vie des mouches</h2>
+                <p>Les mouches font partie de l’ordre des diptères, ce qui signifie qu’elles n’ont qu’une paire d’ailes. Plus de 80,000 espèces volent à travers le monde. <br>
+                    La durée de vie d’une mouche dépend de son espèce, mais en général les mouches peuvent vivre une vingtaine de jours.<br>
+                <br></p>
+                    <h5>CYCLE DE VIE :</h5>
+                <p>
+                    Une mouche femelle peut pondre entre 500 et 1000 oeufs. <br>
+                    Le cycle de la mouche passe par 4 étapes de métamorphose : <br>
+                </p><p> 1. Les œufs de couleur blanchâtre mesurent 1 mm et sont déposés sur de la matière organique. <br>
+                        2. Après 1 à 7 jours d’incubation la larve, appelée aussi asticot, voit le jour. Il fait 3 à 9 mm et se nourrit de la matière organique sur laquelle les œufs avaient été déposés. <br>
+                        3. Ensuite il faut entre 5 à 20 jours pour se transformer en pupe, de couleur rougeâtre et mesurant 8 mm de long.<br>
+                        4. Cette enveloppe contient la nymphe et libérera l’insecte adulte au bout de 5 à 10 jours.
+                    </p>
+                    <p> La plupart des mouches vivent à l’extérieur, mais les conditions favorables créées par l’homme (la chaleur, l’humidité et la nourriture) font que les mouches s’installent souvent dans les murs de nos bâtiments.<br>
+                        Une température ambiante de 30°C permet à la mouche domestique d’accomplir son cycle de vie en seulement 10 jours. La lutte contre la mouche est donc un combat complexe.
+                    </p>
+                        <h5>MODE DE VIE :</h5>  
+                    <p>                 
+                    Les mouches ont une réelle utilité dans la nature grâce à leur mode de vie :
+                    </p><p> 
+                    * pollinisation des fleurs <br>
+                    * source de nourriture pour les poissons <br>
+                    * nettoyage des déchets en s’en nourrissant <br>
+                    * combat contre d’autres espèces d’insectes nuisibles (pucerons par exemple)<br>
+                    * en médecine, on utilise certains asticots élevés en milieu stérilisé pour manger les chairs mortes et accélérer la cicatrisation
+                    </p>
+            </div>
+
+            <div class="column">
+                <img src="palimpseste_sources/IMG9.jpeg" class="image5" />
+            </div>
+        </div>
+
+        <h1>Quel type de personnalité es-tu ?</h1>
+        <form id="personality-test">
+            <div class="question">
+                <p>1. Préfères-tu :</p>
+                <label><input type="radio" name="q1" value="a"> Les soirées animées avec beaucoup de monde</label><br>
+                <label><input type="radio" name="q1" value="b"> Une soirée tranquille avec quelques amis proches</label>
+            </div>
+
+            <div class="question">
+                <p>2. Lorsque tu pars en vacances, tu choisis :</p>
+                <label><input type="radio" name="q2" value="a"> Une destination pleine d'activités et d'aventure</label><br>
+                <label><input type="radio" name="q2" value="b"> Un lieu calme pour te détendre et te ressourcer</label>
+            </div>
+
+            <div class="question">
+                <p>3. Comment prends-tu des décisions importantes ?</p>
+                <label><input type="radio" name="q3" value="a"> Avec une logique et une analyse minutieuse</label><br>
+                <label><input type="radio" name="q3" value="b"> En suivant ton intuition et ton ressenti</label>
+            </div>
+
+            <button type="submit">Voir mon résultat</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Ton résultat :</h2>
+            <p id="result-text"></p>
+        </div>
+
+        <div class="ligne">
+            <div class="column">
+                <p><a class=lien href="#top">Top</a></p>
+            </div>
+                <div class="pagination">
+                    <a href="index.html"><</a>
+                    <a href="index.html">Histoires</a>
+                    <a href="#top"class="active">Jeux de bêtes</a>
+                    <a href="#top">></a>
+                </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Script pour le bouton Mode dark/light
+        const darkModeToggle = document.getElementById('darkModeCheckbox');
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const isDarkMode = localStorage.getItem('darkMode') === 'true';
+            document.body.classList.toggle('dark-mode', isDarkMode);
+            darkModeToggle.checked = isDarkMode;
+        });
+
+        darkModeToggle.addEventListener('change', () => {
+            const isDarkMode = darkModeToggle.checked;
+            document.body.classList.toggle('dark-mode', isDarkMode);
+            localStorage.setItem('darkMode', isDarkMode);
+        });
+    </script>
+
+
+    <script>
+            // Script pour l'animation du titre
+    document.addEventListener("DOMContentLoaded", function () {
+        const titles = ["Créatures", "Bêtes", "Bestioles", "Animaux", "Monstres", "Entités", "Chimères", "Proies", "Insectes", "Substances vivantes", "Formes de vie"];
+        const typingSpeed = 150; // Vitesse d'écriture
+        const erasingSpeed = 100; // Vitesse d'effacement
+        const delayBetweenCycles = 2000; // Pause avant réécriture
+        const h2Wrapper = document.querySelector(".h2-wrapper");
+    
+        let titleIndex = 0;
+        let charIndex = 0;
+        let isErasing = false;
+    
+        function typeAnimation() {
+            if (charIndex < titles[titleIndex].length && !isErasing) {
+                h2Wrapper.textContent += titles[titleIndex][charIndex];
+                charIndex++;
+                setTimeout(typeAnimation, typingSpeed);
+            } else if (charIndex > 0 && isErasing) {
+                h2Wrapper.textContent = titles[titleIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(typeAnimation, erasingSpeed);
+            } else if (!isErasing && charIndex === titles[titleIndex].length) {
+                setTimeout(() => (isErasing = true, typeAnimation()), delayBetweenCycles);
+            } else if (isErasing && charIndex === 0) {
+                isErasing = false;
+                titleIndex = (titleIndex + 1) % titles.length;
+                setTimeout(typeAnimation, typingSpeed);
+            }
+        }
+    
+        typeAnimation();
+    });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,581 @@
+/* Version light */
+body {
+    font-family: Junction, sans-serif;
+    display: flex;
+    cursor: url('palimpseste_sources/Curseur.png') 12 12, auto;
+    margin : 0;
+}
+
+.column-fixed {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+    color: #000000;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.column-fixed p {
+    color: #000000;
+    cursor: url('palimpseste_sources/Curseur.png') 12 12, auto;
+}
+
+.column-fixed p:hover {
+    color: #000000;
+}
+
+.column-scroll {
+    margin-left: 20%;
+    width: 80%;
+    overflow-y: auto;
+}
+
+.column {
+    flex: 1;
+    padding: 30px;
+}
+
+
+.ligne {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    margin-top: 0;
+    font-family: Nudles;
+    font-size: 30px;
+    color:rgb(154, 77, 255) ;
+}
+
+h2:hover{
+    color: transparent;
+    transition: color 0,8s ease;
+    -webkit-text-stroke: 1px rgb(154, 77, 255);
+    cursor: url('palimpseste_sources/Curseur_hover.png') 12 12, auto;
+}
+
+p {
+    line-height: 1.3;
+}
+
+h5 {
+    line-height: 1.3;
+    border-bottom: 1.5px dotted rgb(154, 77, 255);
+}
+
+h5:hover{
+    cursor: url('palimpseste_sources/Curseur_hover.png') 12 12, auto;
+    color : rgb(154, 77, 255);
+}
+
+
+p:hover{
+    color: rgb(154, 77, 255);
+    transition: color 0,8s ease;
+    cursor: url('palimpseste_sources/Curseur_hover.png') 12 12, auto;
+}
+
+.lien {
+    color: rgb(154, 77, 255);
+    text-decoration: none;
+    border-bottom: 1.5px dotted rgb(154, 77, 255);
+}
+
+.lien:hover{
+    color: rgb(154, 77, 255);
+    text-decoration: none;
+    transition: color 0,8s ease;
+    border-bottom: none;
+    cursor: url('palimpseste_sources/Curseur_hover.png') 12 12, auto;
+}
+
+.image1 {
+    width: 100%;
+    height: auto;
+    transition: 0.8s ease;
+    margin-bottom: 450px;
+}
+
+.image1:hover {
+    content: url('palimpseste_sources/IMG2.jpg');
+    cursor: url('palimpseste_sources/Curseur_hover.png') 12 12, auto;
+    transform: rotate(1.5deg);
+}
+
+.image2 {
+    width: 100%;
+    height: auto;
+    transition: 0.8s ease;
+    border: none;
+    outline: none;
+}
+
+.image2:hover {
+    content: url('palimpseste_sources/IMG4.jpg');
+    cursor: url('palimpseste_sources/Curseur_hover.png') 12 12, auto;
+    transform: rotate(1.5deg);
+}
+
+.image3 {
+    width: 100%;
+    height: auto;
+    transition: 0.8s ease;
+}
+
+.image3:hover {
+    content: url('palimpseste_sources/IMG6.jpg');
+    cursor: url('palimpseste_sources/Curseur_hover.png') 12 12, auto;
+    transform: rotate(1.5deg);
+}
+
+.image4 {
+    width: 100%;
+    height: auto;
+    transition: 0.8s ease;
+    margin-top: 50px;
+}
+
+.image4:hover {
+    content: url('palimpseste_sources/IMG8.jpg');
+    cursor: url('palimpseste_sources/Curseur_hover.png') 12 12, auto;
+    transform: rotate(1.5deg);
+}
+
+.image5 {
+    width: 100%;
+    height: auto;
+    transition: 0.8s ease;
+}
+
+.image5:hover {
+    content: url('palimpseste_sources/IMG10.jpg');
+    cursor: url('palimpseste_sources/Curseur_hover.png') 12 12, auto;
+    transform: rotate(1.5deg);
+}
+
+
+.animation:hover{
+    -webkit-text-stroke: none;
+    cursor: url('palimpseste_sources/Curseur_hover.png') 12 12, auto;
+}
+
+.pagination{
+float:right;
+padding : 30px
+}
+
+.pagination a{
+    color: rgb(154, 77, 255);
+    border: 1.5px dotted rgb(154, 77, 255);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.pagination a.active{
+    background-color: rgb(154, 77, 255);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active){
+    background-color: hsl(0, 0%, 77%);
+    color : white;
+    border-radius: 5px;
+}
+
+video {
+    width : 200px;
+    height : auto
+}
+
+/* Jeu "choisis la créature" (light) */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: transparent;
+    border: 1.5px dotted rgb(154, 77, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    width : 90%
+
+}
+
+label:hover {
+    background-color: rgb(154, 77, 255);
+    cursor: url('palimpseste_sources/Curseur_hover.png') 12 12, auto;
+    color : white
+}
+
+.result {
+    margin-top: 20px;
+    color: #000000;
+    display: none;
+}
+
+input[type="checkbox"]:checked + label + .result {
+    display: block;
+}
+
+
+/* Animation du titre */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.h2-wrapper {
+    display: inline-block;
+    vertical-align: bottom;
+    border-right: 2px solid rgb(154, 77, 255);
+    padding-right: 3px;
+}
+
+/* Jeu "trouve la créature"*/
+.creature-btn {
+    width: 210px;
+    height: 140px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    display: inline-block;
+    border : 1.5px dotted rgb(154, 77, 255);
+    background-color: transparent;
+  }
+
+.creature-btn img{
+    width: 200px;
+    max-height: 120px;
+    max-width: 100%;
+    display: block;
+}
+
+.creature-btn:hover {
+    display: inline-block;
+    border : 1.5px dotted rgb(154, 77, 255);
+    background-color: transparent;
+    transform: rotate(3deg);
+}
+
+/* Jeu "fais voler des mouches"*/
+.zone_mouche {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 30px auto;
+    overflow: hidden;
+    background-color: rgb(154, 77, 255);
+    cursor: url('palimpseste_sources/Curseur_hover.png') 12 12, auto;
+}
+
+.image {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transform: scale(1);
+    animation: moveMouche 1s ease-out forwards;
+}
+
+@keyframes moveMouche {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+/* Animation de l'image */
+@keyframes moveMouche_volante {
+    0% { left: 10%; top: 10%; }
+    25% { left: 80%; top: 30%; }
+    50% { left: 100%; top: 80%; }
+    75% { left: 30%; top: 50%; }
+    100% { left: 90%; top: 10%; }
+}
+
+.mouche_volante {
+    opacity: 70%;
+    position: absolute;
+    width: 80px;
+    height: auto;
+    animation: moveMouche_volante 8s infinite cubic-bezier(0.25, 0.8, 0.25, 1); /* Animation continue avec une courbe fluide */
+    z-index: -1;
+}
+
+.gifcreature {
+    width: 450px;
+    height : auto
+}
+
+/* Version dark */
+
+body.dark-mode {
+    background-color: #000000;
+    cursor: url('palimpseste_sources/Curseur_hover.png') 12 12, auto;
+}
+
+body.dark-mode .column-fixed {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+body.dark-mode .column-fixed p {
+    color: #ffffff;
+}
+
+body.dark-mode .column-fixed p:hover {
+    color: #ffffff;
+}
+
+body.dark-mode h2 {
+    color: #36d7b7;
+}
+
+body.dark-mode h2:hover {
+    color:transparent;
+    -webkit-text-stroke: 1px #36d7b7 ;
+    cursor: url('palimpseste_sources/Curseur.png') 12 12, auto;
+}
+
+body.dark-mode p {
+    color: #ffffff;
+}
+
+body.dark-mode p:hover {
+    color: #36d7b7;
+    cursor: url('palimpseste_sources/Curseur.png') 12 12, auto;
+}
+
+body.dark-mode .lien {
+    color: #36d7b7;
+    border-bottom: 1.5px dotted #36d7b7;
+}
+
+body.dark-mode .lien:hover {
+    color: #36d7b7;
+    border-bottom: none;
+    cursor: url('palimpseste_sources/Curseur.png') 12 12, auto;
+}
+
+body.dark-mode .pagination a{
+    color: #36d7b7;
+    border: 1.5px dotted #36d7b7;
+
+}
+
+body.dark-mode .pagination a.active{
+    background-color:#36d7b7;
+    color : white
+}
+
+body.dark-mode label {
+    background-color: transparent;
+    border: 1.5px dotted #36d7b7;
+    color: #ffffff;
+
+}
+
+body.dark-mode label:hover {
+    background-color: #36d7b7;
+    color: #ffffff;
+    cursor: url('palimpseste_sources/Curseur_hover.png') 12 12, auto;
+}
+
+body.dark-mode .h2-wrapper {
+    border-right: 2px solid #36d7b7;
+}
+
+body.dark-mode .creature-btn {
+    border : 1.5px dotted #36d7b7;
+  }
+
+
+body.dark-mode .zone_mouche {
+    background-color: #36d7b7;
+}
+
+body.dark-mode .result {
+    color: #ffffff;
+}
+
+body.dark-mode h5 {
+    color: #ffffff;
+    border-bottom: 1.5px dotted rgb(255, 255, 255);
+
+}
+
+body.dark-mode h5:hover {
+    color: #36d7b7;
+    border-bottom: 1.5px dotted #36d7b7;
+}
+
+
+/* Typos */
+
+@font-face {
+    font-family: 'Junction';
+    src:url('palimpseste_typo/junction-light.woff') format('woff');
+    font-weight: light;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'Nudles';
+    src: url('palimpseste_typo/Nudles-Bold.woff2') format('woff2'),
+         url('palimpseste_typo/Nudles-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+}
+
+
+/* Bouton Dark/Light mode */
+
+/* Positionnement du bouton */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+
+/* Cacher le checkbox (mais garder son état) */
+.dark-mode-toggle input[type="checkbox"] {
+    display: none;
+}
+
+/* Style du label qui agit comme un bouton */
+.dark-mode-toggle .toggle-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 15px;
+    background-color: #ffffff;
+    border: 2px solid rgb(154, 77, 255);
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Icône interne */
+.dark-mode-toggle .toggle-icon {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(154, 77, 255);
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Style pour le mode sombre quand le checkbox est activé */
+input[type="checkbox"]:checked + .toggle-label {
+    background-color: #000000;
+    border-color: #36d7b7;
+}
+
+input[type="checkbox"]:checked + .toggle-label .toggle-icon {
+    background-color: #36d7b7;
+    transform: translateX(30px); /* Déplacement de l'icône */
+}
+
+
+
+/* Mode responsive 1 */
+
+@media screen and (max-width: 1100px) {
+    body {
+        flex-direction: column;
+    }
+
+    .column-fixed {
+        position: sticky;
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+        padding: 30px;
+    }
+
+    .column-fixed p{
+        max-width: 50%;
+        white-space: normal;
+    }
+
+    .column-scroll {
+        margin-left: 0;
+        margin-top: auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .column {
+        width: 50%;
+        padding: 30px;
+        box-sizing: border-box;
+        
+    }
+
+    .image1, .image2 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+/* Mode responsive 2 */
+
+@media screen and (max-width: 600px) {
+    body {
+        display: block;
+    }
+
+
+    .column-fixed {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+    }
+
+    .column-fixed p{
+        max-width: 50%
+}
+
+.column-scroll {
+    display: block;
+    height: auto;
+
+}
+
+.column {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.image1, .image2 {
+    width: 100%;
+    margin-bottom: 0px;
+}
+}
